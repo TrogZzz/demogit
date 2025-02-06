@@ -1,0 +1,144 @@
+body{
+        margin: 0;
+        background-color: #f3f3f3;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+
+    }
+
+.giaodien{
+   text-align: center;
+    position: relative; /* Để định vị các nút bên trong ảnh */
+    width: 1000px;
+    height: 400px;
+    overflow: hidden; /* Đảm bảo nội dung thừa không hiển thị */
+    margin:20px;
+    margin-left:20%;
+
+
+}
+.truoc, .sau {
+    position: absolute;
+    top: 50%; /* Canh giữa theo chiều dọc */
+    transform: translateY(-50%);
+    background-color: rgba(246, 238, 238, 0.5); /* Nền mờ để nổi bật */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Mặc định ẩn */
+}
+
+.truoc {
+    left: 10px; /* Canh trái */
+}
+
+.sau {
+    right: 10px; /* Canh phải */
+}
+
+/* Hiển thị nút khi di chuột vào khu vực .giaodien */
+.giaodien:hover .truoc,
+.giaodien:hover .sau {
+    display: block;
+}
+.truoc:hover, .sau:hover {
+    transform: translateY(-50%) scale(1.1);
+    background-color: rgba(12, 242, 131, 0.8);
+}
+/*menu*/
+.menu{
+    background-color: rgb(92, 241, 239);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+
+}
+.menu ul li {
+ 
+    margin-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    display:inline-flex;
+}
+.menu ul li a{
+    font-size:20px;
+    text-decoration: none;
+    color:rgb(246, 8, 227);
+    padding: 5px;
+    
+}
+.menu ul li a:hover{
+    background-color: rgb(252, 148, 243);
+    color: white;
+}
+.congcu {
+    appearance: none; /* Ẩn mũi tên trên tất cả trình duyệt hỗ trợ */
+    -webkit-appearance: none; /* Ẩn trên trình duyệt Webkit (Chrome, Safari) */
+    -moz-appearance: none; /* Ẩn trên Firefox */
+    border: none; /* Xóa viền cho select */
+    background-color: transparent; /* ��n màu nền của select */
+    padding: 10px 20px; /* Thêm padding cho phù h��p với chữ */
+    font-size: 20px; /* Thay đ��i kích thước chữ */
+    cursor: pointer; /* Thay đ��i con tr�� chuột */
+    color:rgb(235, 11, 220);
+    border-radius: 5px; /* Thay đ��i bánh răng của select */
+ 
+}
+select:hover{
+    background-color: rgb(252, 148, 243);
+    color: white;
+}
+table{
+    margin-top:10px;
+    margin-left:10%;
+    margin-right:30%;
+    border-radius: 20px;
+    border:1px solid rgb(242, 189, 189);
+}
+.the, .loc tr td p {
+    text-align: center;
+}
+.the table a{
+    text-decoration: none;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+.job-item {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.job-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.salary {
+    color: red;
+    font-weight: bold;
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+.pagination button {
+    padding: 10px;
+    margin: 5px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
